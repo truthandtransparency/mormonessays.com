@@ -1,0 +1,13 @@
+# Site settings
+title: Mormon Essays
+email: mormonessays@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Mormon Essays publishes links to the recent essays written by the Church of Jesus Christ of Latter-day Saints, or the Mormon Church. Many of the essays address controversial issues from the church's history. The essays seek to explain the events in an easy to understand format for both members of the church and other individuals that may be interested in Mormon History.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mormonessays.com" # the base hostname & protocol for your site
+twitter_username: mormonessays
+github_username:  mormonessays
+
+# Build settings
+markdown: kramdown
+
