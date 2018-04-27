@@ -18,3 +18,5 @@ mother_url: https://truthandtransparency.org
 collections:
  essays:
   output: false
+ languages:
+  output: false
