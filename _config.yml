@@ -16,4 +16,5 @@ mother: Truth and Transparency Foundation
 mother_url: https://truthandtransparency.org
 
 collections:
- - essays
+ essays:
+  output: false
