@@ -1,27 +1,21 @@
 ---
 layout: default
 ---
+{% assign essays = site.essays | reverse %}
 <div>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="5" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="6" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="7" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="8" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="9" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="10" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="11" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="12" class=""></li>
+      {% for essay in essays %}
+       {% if forloop.index0 == 0 %}
+        <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index0 }}" class="active"></li>
+       {% else %}
+        <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index0 }}" class=""></li>
+       {% endif %}
+      {% endfor %}
       </ol>
       <div class="carousel-inner" role="listbox">
-      {% assign essays = site.essays | reverse %}
       {% for essay in essays %}
-       {% if forloop.index == 1 %}
+       {% if forloop.index0 == 0 %}
         <div class="item active slide-{{ essay.name }}">
        {% else %}
         <div class="item slide-{{ essay.name }}">
