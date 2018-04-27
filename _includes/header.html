@@ -25,19 +25,10 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Essays <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="themes">
-                <li><a href="https://www.lds.org/topics/first-vision-accounts">First Vision Accounts</a></li>               
-                <li><a href="https://www.lds.org/topics/book-of-mormon-translation">Book of Mormon Translation</a></li>
-                <li><a href="https://www.lds.org/topics/book-of-mormon-and-dna-studies">Book of Mormon and DNA Studies</a></li>
-                <li><a href="https://www.lds.org/topics/race-and-the-priesthood">Race and the Priesthood</a></li>
-                <li><a href="https://www.lds.org/topics/translation-and-historicity-of-the-book-of-abraham">Translation and Historicity of the Book of Abraham</a></li>
-                <li><a href="https://www.lds.org/topics/plural-marriage-in-kirtland-and-nauvoo?lang=eng">Plural Marriage in Kirtland and Nauvoo</a></li>                 
-                <li><a href="https://www.lds.org/topics/plural-marriage-and-families-in-early-utah">Plural Marriage and Families in Early Utah</a></li>
-                <li><a href="https://www.lds.org/topics/becoming-like-god">Becoming Like God</a></li>
-                <li><a href="https://www.lds.org/topics/christians">Are Mormons Christian?</a></li>
-                <li><a href="https://www.lds.org/topics/peace-and-violence-among-19th-century-latter-day-saints">Peace and Violence among 19th-Century Latter-day Saints</a></li>
-                <li><a href="https://www.lds.org/topics/the-manifesto-and-the-end-of-plural-marriage?lang=eng">The Manifesto and the End of Plural Marriage</a></li>
-                <li><a href="https://www.lds.org/topics/joseph-smiths-teachings-about-priesthood-temple-and-women?lang=eng">Joseph Smith’s Teachings about Priesthood, Temple, and Women</a></li>
-                <li><a href="https://www.lds.org/topics/mother-in-heaven?lang=eng">Mother in Heaven</a></li>
+              {% assign essays = site.essays | reverse %}
+              {% for essay in essays %}
+                <li><a href="https://www.lds.org/topics/{{ essay.name }}?lang=eng&old=true" target="_blank">{{ essay.title }}</a></li>
+              {% endfor %}
               </ul>
             </li>
             <li><a href="/translations/">Translations</a></li>
