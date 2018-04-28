@@ -58,8 +58,8 @@ layout: default
         {{ essay.description }}
       </div>
       <div class="subtext">
-          <h6>Published on {{ essay.date | date: "%B %e, %Y" }} | <a href="https://www.lds.org/topics/{{ essay.name }}?lang=eng&old=true" target="_blank">Read on LDS.org</a></h6>
-          Available Translations: {% for lang in langs %}<a href="https://www.lds.org/topics/{{ essay.name }}?lang={{ lang.short }}&old=true" target="_blank">{{ lang.name }}</a>{% if forloop.last %} {% else %} | {% endif %}{% endfor %}
+          <h6><p>Published on {{ essay.date | date: "%B %e, %Y" }} | <a href="https://www.lds.org/topics/{{ essay.name }}?lang=eng&old=true" target="_blank">Read on LDS.org</a></p>
+              <p>Available Translations: {% for lang in langs %}<a href="https://www.lds.org/topics/{{ essay.name }}?lang={{ lang.short }}&old=true" target="_blank">{{ lang.name }}</a>{% if forloop.last %} {% else %} | {% endif %}{% endfor %}</p></h6>
       </div>
     </li>
   {% endfor %}
