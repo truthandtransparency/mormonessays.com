@@ -1,3 +1,5 @@
+---
+---
 .content {
 	margin-top: 80px;
 	min-height: 700px;
@@ -55,75 +57,18 @@ blockquote {
 
 }
 
-.slide-book-of-mormon-translation {
-	background-image: url('/img/slides/large/book-of-mormon-translation.jpg') !important;
-	background-repeat: no-repeat !important;
-}
-
-.slide-christians {
-	background-image: url('/img/slides/large/christians.jpg') !important;
-	background-repeat: no-repeat !important;
-}
-
-.slide-first-vision-accounts {
-	background-image: url('/img/slides/large/first-vision-accounts.jpg') !important;
-	background-repeat: no-repeat !important;
-}
-
-.slide-becoming-like-god {
-	background-image: url('/img/slides/large/becoming-like-god.jpg') !important;
-	background-repeat: no-repeat !important;
-}
-
-.slide-the-manifesto-and-the-end-of-plural-marriage {
-	background-image: url('/img/slides/large/the-manifesto-and-the-end-of-plural-marriage.jpg') !important;
-	background-repeat: no-repeat !important;
-}
-
-.slide-plural-marriage-in-kirtland-and-nauvoo {
-	background-image: url('/img/slides/large/plural-marriage-in-kirtland-and-nauvoo.jpg') !important;
-	background-repeat: no-repeat !important;
-}
-
-.slide-plural-marriage-and-families-in-early-utah {
-        background-image: url('/img/slides/large/plural-marriage-and-families-in-early-utah.jpg') !important;
+{% assign essays = site.essays | reverse %}
+{% for essay in essays %}
+.slide-{{ essay.name }} {
+        background-image: url('/img/slides/large/{{ essay.name }}.jpg') !important;
         background-repeat: no-repeat !important;
 }
+{% endfor %}
 
 .dark-background > div > h3 { 
 	background-color: #42586e;
 	padding-top: 15px;
 	padding-bottom: 15px;
-}
-
-.slide-peace-and-violence-among-19th-century-latter-day-saints {
-	background-image: url('/img/slides/large/peace-and-violence-among-19th-century-latter-day-saints.jpg') !important;
-	background-repeat: no-repeat !important;
-}
-
-.slide-race-and-the-priesthood {
-	background-image: url('/img/slides/large/race-and-the-priesthood.jpg') !important;
-	background-repeat: no-repeat !important;
-}
-
-.slide-book-of-mormon-and-dna-studies {
-	background-image: url('/img/slides/large/book-of-mormon-and-dna-studies.jpg') !important;
-	background-repeat: no-repeat !important;
-}
-
-.slide-translation-and-historicity-of-the-book-of-abraham {
-	background-image: url('/img/slides/large/translation-and-historicity-of-the-book-of-abraham.jpg') !important;
-	background-repeat: no-repeat !important;
-}
-
-.slide-mother-in-heaven {
-        background-image: url('/img/slides/large/mother-in-heaven.jpg') !important;
-        background-repeat: no-repeat !important;
-}
-
-.slide-joseph-smiths-teachings-about-priesthood-temple-and-women {
-        background-image: url('/img/slides/large/joseph-smiths-teachings-about-priesthood-temple-and-women.jpg') !important;
-        background-repeat: no-repeat !important;
 }
 
 .slide-title {

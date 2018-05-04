@@ -8,6 +8,8 @@ The Church recently translated the essays into the following languages. Click on
 
 <hr/>
 
+
+
 #### Español
 
 [El matrimonio plural en Kirtland y en Nauvoo](https://www.lds.org/topics/plural-marriage-in-kirtland-and-nauvoo?lang=spa)
