@@ -20,3 +20,7 @@ collections:
   output: false
  languages:
   output: false
+
+# netlify redirects
+exclude: [vendor, README.md, LICENSE, Gemfile, Gemfile.lock]
+include: [_redirects]
