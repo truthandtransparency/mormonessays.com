@@ -1,0 +1,9 @@
+---
+---
+{% assign essays = site.essays | reverse %}
+{% for essay in essays %}
+.slide-{{ essay.name }} {
+        background-image: url('/img/slides/{{ essay.name }}.jpg') !important;
+        background-repeat: no-repeat !important;
+}
+{% endfor %}
